@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/museosans100-webfont.woff2');
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	height: 100%;
+	background: url('../img/bg1.png') 0 0 no-repeat,
+							url('../img/bg2.png') 0 0 no-repeat,
+							url('../img/bg.png') 0 0 no-repeat,
+							url('../img/bg3.png') 0 0 no-repeat;
+	background-size: cover, cover, cover, cover;	
+}
+
+.card {
+	width: 690px;
+	height: 390px;
+	background: #152335;
+	border-radius: 10px;
+	margin: 100px auto;
+	box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+	font-size: 0;
+}
+.card__gallery {
+	display: inline-block;
+	width: 66%;
+	vertical-align: middle;
+}
+.card__logo {
+	width: 65px;
+	height: 35px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+.card__logo-link {
+	display: block;
+	height: 100%;
+}
+.card__logo-img {
+	width: 100%;
+}
+.card__product {
+	text-align: center;
+	margin-top: 65px;
+	margin-left: 35px;
+}
+.card__product-img {
+	width: 80%;
+}
+.card__color {
+	list-style: none;
+	padding: 0;
+	font-size: 0;
+	margin-top: 65px;
+	text-align: center;
+}
+.card__color-item{
+	display: inline-block;
+}
+.card__color-item:not(:last-of-type) {
+	margin-right: 8px;
+}
+.card__color-link {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	transition: all 0.2s linear;
+}
+.card__color-link:hover {
+	-webkit-transform: scale(1.5, 1.5);
+	   -moz-transform: scale(1.5, 1.5);
+	    -ms-transform: scale(1.5, 1.5);
+	     -o-transform: scale(1.5, 1.5);
+	        transform: scale(1.5, 1.5);
+	 border: 1px solid #c5c5c8;
+}
+.card__color-link:active {
+	border-color: transparent;	
+}
+.card__color-link_dark-blue{
+	background: #293550
+}
+.card__color-link_white{
+	background: #FFF;
+}
+.card__color-link_red{
+	background: #F34B41;
+}
+.card__color-link_blue{
+	background: #24E7EE;
+}
+.card__description {
+	font-family: MuseoSans, sans-serif;
+	font-size: 14px;
+	color:  #e1e1e1;
+	display: inline-block;
+	vertical-align: middle;
+	width: 34%;
+	color: #fff;
+}
+.card__title {
+	font-size: 24px;
+	opacity: 0.7;
+}
+.card__subtitle {
+	width: 180px;
+  height: 15px;
+  font-size: 14px;
+  opacity: 0.3;
+  overflow: hidden;
+}
+.card__stars {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+	font-size: 0;
+}
+.card__star {
+	display: inline-block;
+	margin-right: 2px;
+	width: 12px;
+	height: 12px;
+	background: url(../img/star.svg) no-repeat;
+	background-size: contain; 
+}
+.card__star_filled {
+	background-image: url(../img/star-g.svg);
+}
+.card__btn {
+	width: 70px;
+	height: 30px;
+	margin-top: 30px;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	outline: none;
+	background: transparent url('../img/down-arrow.svg') no-repeat;
+	background-size: 12px;
+	background-position: 45px center;
+}
+.card__btn-add {
+	display: block;
+	width: 185px;
+	height: 40px;
+	margin-top: 30px;
+	outline: none;
+	color: rgba(255, 255, 255, 0.5);
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.card__btn-add:hover {
+	background-color: #4c525a;
+	color: #fff;
+}
+.card__btn-add:active {
+	background-color: transparent;
+}
